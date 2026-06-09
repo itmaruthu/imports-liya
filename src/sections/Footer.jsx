@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer className="relative w-full pt-20 pb-10 bg-brand-black overflow-hidden border-t border-white/5">
       {/* Footer Ambient Green Glow */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-64 bg-[radial-gradient(ellipse_at_bottom,rgba(18,94,55,0.15),transparent_70%)] pointer-events-none -z-10" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-64 bg-[radial-gradient(ellipse_at_bottom,rgba(200,160,60,0.12),transparent_70%)] pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         

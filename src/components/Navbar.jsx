@@ -19,6 +19,7 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
+    { name: "Home", href: "#" },
     { name: "Overview", href: "#overview" },
     { name: "Products", href: "#products" },
     { name: "Process", href: "#process" },
@@ -29,10 +30,8 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${
-          isScrolled
-            ? "py-4 bg-brand-black/70 backdrop-blur-xl border-b border-white/5 shadow-[0_4px_30px_rgba(0,0,0,0.4)]"
-            : "py-7 bg-transparent border-b border-transparent"
+        className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 bg-brand-forest/90 backdrop-blur-xl border-b border-white/5 shadow-[0_4px_30px_rgba(0,0,0,0.06)] ${
+          isScrolled ? "py-4" : "py-7"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
@@ -78,7 +77,7 @@ export default function Navbar() {
               data-cursor="quote"
             >
               <span className="relative z-10 flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-white group-hover:text-brand-black transition-colors duration-300">
-                Get Quote
+                Contact Us
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </span>
               {/* Sliding Gold Background */}
@@ -105,7 +104,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 bg-brand-black/95 z-[99] pt-28 px-8 flex flex-col gap-8 md:hidden backdrop-blur-2xl"
+            className="fixed inset-0 bg-brand-forest/95 z-[99] pt-28 px-8 flex flex-col gap-8 md:hidden backdrop-blur-2xl"
           >
             <div className="flex flex-col gap-6">
               {navLinks.map((link) => (
@@ -125,7 +124,7 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
               className="mt-8 py-4 w-full rounded-full border border-brand-gold/60 text-center font-bold tracking-widest uppercase text-brand-gold hover:bg-brand-gold hover:text-brand-black transition-colors duration-300"
             >
-              Get Quote
+              Contact Us
             </a>
           </motion.div>
         )}

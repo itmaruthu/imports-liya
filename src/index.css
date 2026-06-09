@@ -2,25 +2,33 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-black: #050505;
-  --color-brand-dark: #0a0a0a;
-  --color-brand-deep-green: #042217;
-  --color-brand-forest: #0b3a22;
-  --color-brand-light-green: #125e37;
-  --color-brand-gold: #d4af37;
-  --color-brand-gold-light: #f3e5ab;
-  --color-brand-gold-dark: #aa7c11;
-  --color-glass-bg: rgba(10, 10, 10, 0.6);
+  --color-brand-black: #081826;
+  --color-brand-dark: #10273B;
+  --color-brand-deep-green: #0C2032;
+  --color-brand-forest: #040C13;
+  --color-brand-light-green: #102E47;
+  
+  /* Luxury gold accents */
+  --color-brand-gold: #C8A03C;
+  --color-brand-gold-light: #F3E5AB;
+  --color-brand-gold-dark: #AA7C11;
+  
+  --color-glass-bg: rgba(16, 39, 59, 0.65);
   --color-glass-border: rgba(255, 255, 255, 0.08);
 
   --font-serif: "Playfair Display", serif;
   --font-sans: "Outfit", sans-serif;
+
+  /* Restore default white/black colors */
+  --color-white: #F8F8F8;
+  --color-black: #081826;
 }
 
 @layer base {
   body {
-    background-color: var(--color-brand-black);
-    color: #ffffff;
+    background: radial-gradient(circle at 50% 0%, #10273B 0%, #081826 100%);
+    background-attachment: fixed;
+    color: var(--color-white);
     font-family: var(--font-sans);
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -31,67 +39,55 @@
     width: 8px;
   }
   ::-webkit-scrollbar-track {
-    background: #050505;
+    background: #081826;
   }
   ::-webkit-scrollbar-thumb {
-    background: #111111;
+    background: #1C334A;
     border-radius: 10px;
-    border: 2px solid #050505;
+    border: 2px solid #081826;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--color-brand-gold-dark);
+    background: var(--color-brand-gold);
   }
 
   /* Selection highlight */
   ::selection {
     background-color: var(--color-brand-gold);
-    color: var(--color-brand-black);
+    color: #081826;
   }
 }
 
 /* Custom Utilities for Glassmorphism & Luxury Effects */
 .glass-panel {
-  background: rgba(10, 10, 10, 0.65);
+  background: rgba(16, 39, 59, 0.65);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .glass-panel-gold {
-  background: rgba(10, 10, 10, 0.7);
+  background: rgba(16, 39, 59, 0.7);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(212, 175, 55, 0.15);
+  border: 1px solid rgba(200, 160, 60, 0.15);
 }
 
 .gold-glow {
-  box-shadow: 0 0 30px rgba(212, 175, 55, 0.15);
+  box-shadow: 0 0 30px rgba(200, 160, 60, 0.15);
 }
 
 .green-glow {
-  box-shadow: 0 0 50px rgba(18, 94, 55, 0.25);
-}
-
-/* Hide cursor on desktop devices when custom cursor is active */
-@media (min-width: 1024px) {
-  .custom-cursor-active {
-    cursor: none;
-  }
-  .custom-cursor-active a,
-  .custom-cursor-active button,
-  .custom-cursor-active [role="button"] {
-    cursor: none;
-  }
+  box-shadow: 0 0 50px rgba(16, 39, 59, 0.25);
 }
 
 /* Text shine animations for luxury headings */
 .text-shine {
   background: linear-gradient(
     to right,
-    #ffffff 20%,
+    #F8F8F8 20%,
     var(--color-brand-gold) 40%,
     var(--color-brand-gold-light) 60%,
-    #ffffff 80%
+    #F8F8F8 80%
   );
   background-size: 200% auto;
   color: transparent;

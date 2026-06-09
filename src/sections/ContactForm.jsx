@@ -100,7 +100,7 @@ export default function ContactForm() {
 
           {/* Right Side: The Form */}
           <div className="lg:col-span-7">
-            <div className="glass-panel p-8 sm:p-10 rounded-3xl relative shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+            <div className="glass-panel p-8 sm:p-10 rounded-3xl relative shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
               
               {isSubmitted ? (
                 <div className="flex flex-col items-center justify-center py-12 text-center">
@@ -191,7 +191,7 @@ export default function ContactForm() {
                     <select
                       value={formData.category}
                       onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                      className="w-full px-5 py-3.5 rounded-xl bg-[#0e0e0e] border border-white/10 text-white text-sm focus:border-brand-gold focus:outline-none transition-colors"
+                      className="w-full px-5 py-3.5 rounded-xl bg-brand-dark border border-white/10 text-white text-sm focus:border-brand-gold focus:outline-none transition-colors"
                     >
                       <option value="spices">Crimson & Gold Spices</option>
                       <option value="grains">Pearled Basmati Grains</option>

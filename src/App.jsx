@@ -1,5 +1,4 @@
 import { ReactLenis } from "lenis/react";
-import CustomCursor from "./components/CustomCursor";
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import OverviewBento from "./sections/OverviewBento";
@@ -17,9 +16,6 @@ export default function App() {
     <ReactLenis root options={{ lerp: 0.1, duration: 1.5, smoothWheel: true }}>
       <div className="relative min-h-screen bg-brand-black text-white selection:bg-brand-gold selection:text-brand-black overflow-hidden font-sans">
         
-        {/* Custom Premium Cursor Follower */}
-        <CustomCursor />
-
         {/* Floating Glassmorphic Header Navigation */}
         <Navbar />
 

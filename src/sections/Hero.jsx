@@ -40,7 +40,7 @@ export default function Hero() {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover scale-[1.05] brightness-[0.35]"
+          className="w-full h-full object-cover scale-[1.05] opacity-45 brightness-[0.45]"
           src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c02cba73f1d85a06566085a6a6878b40&profile_id=139&oauth2_token_id=57447761"
           onError={(e) => {
             // Fallback if video fails to load: set background gradient
@@ -124,7 +124,7 @@ export default function Hero() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute top-4 left-4 sm:left-12 lg:left-0 glass-panel p-6 rounded-2xl max-w-[220px] shadow-[0_10px_30px_rgba(0,0,0,0.5)] border-l-2 border-l-brand-gold"
+            className="absolute top-4 left-4 sm:left-12 lg:left-0 glass-panel p-6 rounded-2xl max-w-[220px] shadow-[0_10px_30px_rgba(0,0,0,0.35)] border-l-2 border-l-brand-gold"
           >
             <div className="flex items-center gap-3">
               <div className="p-2 bg-brand-gold/10 rounded-lg">
@@ -156,7 +156,7 @@ export default function Hero() {
               ease: "easeInOut",
               delay: 0.5,
             }}
-            className="absolute bottom-12 right-4 sm:right-12 lg:right-0 glass-panel p-6 rounded-2xl max-w-[240px] shadow-[0_10px_30px_rgba(0,0,0,0.5)] border-l-2 border-l-brand-gold"
+            className="absolute bottom-12 right-4 sm:right-12 lg:right-0 glass-panel p-6 rounded-2xl max-w-[240px] shadow-[0_10px_30px_rgba(0,0,0,0.35)] border-l-2 border-l-brand-gold"
           >
             <div className="flex items-center gap-3">
               <div className="p-2 bg-brand-gold/10 rounded-lg">

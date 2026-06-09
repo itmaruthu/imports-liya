@@ -10,7 +10,7 @@ export default function ProductShowcase() {
       id: "spices",
       title: "Crimson & Gold Spices",
       subtitle: "The Aroma of Heritage",
-      image: "/luxury_spices.png",
+      image: `${import.meta.env.BASE_URL}luxury_spices.png`,
       description:
         "Sourced from the micro-climates of the Western Ghats in Kerala, our spices are hand-selected at peak maturity. We export only AAA-graded green cardamom, high-piperine Tellicherry black pepper, and premium Kashmiri saffron threads.",
       specs: [
@@ -24,7 +24,7 @@ export default function ProductShowcase() {
       id: "grains",
       title: "Pearled Basmati Grains",
       subtitle: "The Long-Grain Standard",
-      image: "/luxury_rice.png",
+      image: `${import.meta.env.BASE_URL}luxury_rice.png`,
       description:
         "Cultivated at the foothills of the Himalayas, irrigated by mineral-rich snowmelt. Our premium traditional Basmati rice undergoes a meticulous 2-year aging process in temperature-controlled warehouses to develop its signature elongated grains and nutty aroma.",
       specs: [
@@ -38,7 +38,7 @@ export default function ProductShowcase() {
       id: "herbs",
       title: "Botanical Wellness Herbs",
       subtitle: "Apothecary-Grade Purity",
-      image: "/luxury_herbs.png",
+      image: `${import.meta.env.BASE_URL}luxury_herbs.png`,
       description:
         "Pure wellness ingredients cultivated under strict biodynamic farming practices. From certified organic moringa powder to sun-dried turmeric roots with active curcumin content above 5.5%, we fulfill demanding global pharmaceutical and health standards.",
       specs: [
@@ -52,7 +52,7 @@ export default function ProductShowcase() {
       id: "tea",
       title: "High-Altitude Tea & Coffee",
       subtitle: "Single-Estate Rarities",
-      image: "/luxury_tea.png",
+      image: `${import.meta.env.BASE_URL}luxury_tea.png`,
       description:
         "Sourced from historic, high-altitude estates in Darjeeling and the volcanic hills of Baba Budangiri. We pack rare first-flush orthodox teas and shade-grown Arabica coffees, delivering refined palates to luxury distributors globally.",
       specs: [
